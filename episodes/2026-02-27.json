@@ -1,0 +1,197 @@
+[
+  {
+    "index": 1,
+    "date": "2026-02-27",
+    "title": "Arrested Relaxation in a Disorder-Free Coulomb Spin Liquid",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.23362",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-01.txt"
+  },
+  {
+    "index": 2,
+    "date": "2026-02-27",
+    "title": "Magnetic order and excitations in Ce$_3$TiBi$_5$ and Ce$_3$ZrBi$_5$",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.23316",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-02.txt"
+  },
+  {
+    "index": 3,
+    "date": "2026-02-27",
+    "title": "Extended Ashkin-Teller transition in two coupled frustrated Haldane chains",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.23187",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-03.txt"
+  },
+  {
+    "index": 4,
+    "date": "2026-02-27",
+    "title": "$Z_3$ confined and deconfined Coulomb liquids in $S_{\\rm eff} = 3/2$ pyrochlore magnets",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.23041",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-04.txt"
+  },
+  {
+    "index": 5,
+    "date": "2026-02-27",
+    "title": "Quantum magnetic phase transitions in a Kugel-Khomskii model including spin-orbit coupling",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.23011",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-05.txt"
+  },
+  {
+    "index": 6,
+    "date": "2026-02-27",
+    "title": "Phonons reflect dynamic spin-state order in LaCoO$_3$",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.22725",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-06.txt"
+  },
+  {
+    "index": 7,
+    "date": "2026-02-27",
+    "title": "Quantum Monte Carlo study of the metal-insulator crossover in the square-lattice Hubbard model",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.22705",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-07.txt"
+  },
+  {
+    "index": 8,
+    "date": "2026-02-27",
+    "title": "Memory-Dominated Quantum Criticality as a Universal Route to High-Temperature Superconductivity",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.22626",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-08.txt"
+  },
+  {
+    "index": 9,
+    "date": "2026-02-27",
+    "title": "Symmetry-enforced agreement of Kohn--Sham and many-body Berry phases in the SSH--Hubbard chain",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.22578",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-09.txt"
+  },
+  {
+    "index": 10,
+    "date": "2026-02-27",
+    "title": "Quantum-geometry-driven Mott transitions and magnetism",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.22548",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-10.txt"
+  },
+  {
+    "index": 11,
+    "date": "2026-02-27",
+    "title": "Kondo Reshapes Multiple Orders in a $5f$ van der Waals Material",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.22451",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-11.txt"
+  },
+  {
+    "index": 12,
+    "date": "2026-02-27",
+    "title": "Hidden $Z_{2}\\times Z_{2}$ subspace symmetry protection for quantum scars",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.22397",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-12.txt"
+  },
+  {
+    "index": 13,
+    "date": "2026-02-27",
+    "title": "Tuning the magnetic properties of Kitaev materials via the antiferromagnetic proximity effect: Novel phases and application to an $α$-RuCl$_3$/MnPS$_3$ bilayer",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.22310",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-13.txt"
+  },
+  {
+    "index": 14,
+    "date": "2026-02-27",
+    "title": "Symmetric Mass Generation via Multicriticality in a 3D Lattice Gross-Neveu Model",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.23158",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-14.txt"
+  },
+  {
+    "index": 15,
+    "date": "2026-02-27",
+    "title": "Magnetoresistance Oscillations in Few-Layer NbSe2 in Superconducting Fluctuation Regime",
+    "authors": "",
+    "summary": "",
+    "link": "http://arxiv.org/abs/2602.22788",
+    "doi": "",
+    "categories": [
+      "cond-mat.str-el"
+    ],
+    "txt_path": "episodes/2026-02-27-15.txt"
+  }
+]

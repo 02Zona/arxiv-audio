@@ -4,7 +4,7 @@ set -euo pipefail
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 DATE="${1:-$(date +%F)}"
 VOICE="${VOICE:-Zoe}"
-RATE="${RATE:-220}"
+RATE="${RATE:-190}"
 N="${N:-15}"
 BASE_URL="${BASE_URL:-https://02Zona.github.io/arxiv-audio}"
 TZ_OFFSET="$(date +%z)"

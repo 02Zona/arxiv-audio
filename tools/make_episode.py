@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from utils.arxiv_api import DEFAULT_CATEGORIES, fetch_entries_by_date
+from utils.arxiv_api import DEFAULT_CATEGORIES, fetch_entries_by_listing_date
 
 
 def main() -> None:
@@ -29,7 +29,7 @@ def main() -> None:
     out_dir = Path("episodes")
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    entries = fetch_entries_by_date(date_text, args.n, categories)
+    entries = fetch_entries_by_listing_date(date_text, args.n, categories)
     if not entries:
         print("No entries found. Nothing to write.")
         return
