@@ -2,9 +2,7 @@ import datetime as dt
 import html
 import re
 from typing import Dict, List
-
 import feedparser
-
 
 DEFAULT_CATEGORIES = [
     "cond-mat.str-el",
@@ -28,6 +26,29 @@ def _date_range_token(date_text: str) -> str:
     return f"[{start}+TO+{end}]"
 
 
+def _extract_doi(entry) -> str:
+    # arXiv feed often stores DOI in arxiv_doi or doi
+    for attr in ("arxiv_doi", "doi"):
+        v = getattr(entry, attr, "") or getattr(entry, attr.upper(), "")
+        if v:
+            return strip_html(str(v))
+    # Sometimes DOI appears in links/aux; ignore for now
+    return ""
+
+
+def _extract_categories(entry, default_cat: str) -> List[str]:
+    cats = set()
+    if default_cat:
+        cats.add(default_cat)
+    tags = getattr(entry, "tags", []) or []
+    for t in tags:
+        term = getattr(t, "term", "") or getattr(t, "label", "")
+        term = strip_html(term)
+        if term:
+            cats.add(term)
+    return sorted(cats)
+
+
 def fetch_entries_by_date(date_text: str, limit: int, categories: List[str]) -> List[Dict[str, str]]:
     pool: Dict[str, Dict[str, str]] = {}
 
@@ -44,20 +65,25 @@ def fetch_entries_by_date(date_text: str, limit: int, categories: List[str]) -> 
             item_id = getattr(entry, "id", "") or getattr(entry, "link", "")
             if not item_id or item_id in pool:
                 continue
+
             authors = ""
             if hasattr(entry, "authors"):
                 authors = ", ".join(strip_html(a.get("name", "")) for a in entry.authors)
             elif hasattr(entry, "author"):
                 authors = strip_html(entry.author)
+
             pool[item_id] = {
                 "title": strip_html(getattr(entry, "title", "")),
                 "summary": strip_html(getattr(entry, "summary", "")),
                 "link": item_id,
                 "authors": authors,
                 "published": getattr(entry, "published", ""),
+                "doi": _extract_doi(entry),
+                "categories": _extract_categories(entry, category),
             }
 
     ordered = sorted(pool.values(), key=lambda x: x["published"], reverse=True)[:limit]
+
     entries: List[Dict[str, str]] = []
     for idx, item in enumerate(ordered, 1):
         entries.append(
@@ -67,6 +93,8 @@ def fetch_entries_by_date(date_text: str, limit: int, categories: List[str]) -> 
                 "summary": item["summary"],
                 "link": item["link"],
                 "authors": item["authors"],
+                "doi": item["doi"],
+                "categories": item["categories"],
             }
         )
     return entries
