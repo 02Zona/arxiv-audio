@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>arXiv Morning Brief (Private)</title>
+    <link>https://02Zona.github.io/arxiv-audio/</link>
+    <description>Daily arXiv audio brief (generated feed).</description>
+    <language>en-us</language>
+    <itunes:author>02Zona</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+
+    <!-- New episodes will be inserted here. -->
+  </channel>
+</rss>
