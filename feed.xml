@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title>arXiv Morning Brief (Private)</title>
     <link>https://02Zona.github.io/arxiv-audio/</link>
@@ -7,13 +7,20 @@
     <language>en-us</language>
     <itunes:author>02Zona</itunes:author>
     <itunes:explicit>false</itunes:explicit>
-
+    <item>
+      <title>2026-02-27 · cond-mat/quant-ph 合集 · #01 · No new submissions</title>
+      <description>No new submissions found for selected categories on this date.</description>
+      <pubDate>Fri, 27 Feb 2026 09:00:00 -0800</pubDate>
+      <guid>2026-02-27-01</guid>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-27-01.m4a" length="165904" type="audio/mp4" />
+      <itunes:duration>00:00:06</itunes:duration>
+    </item>
     <item>
       <title>2026-03-01 · cond-mat/quant-ph 合集 · #01 · arXiv brief</title>
       <description>Daily arXiv audio brief.</description>
       <pubDate>Sun, 01 Mar 2026 08:00:00 -0800</pubDate>
       <guid>2026-03-01-01</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-03-01-01.m4a" length="335326" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-03-01-01.m4a" length="335326" type="audio/mp4" />
       <itunes:duration>00:00:13</itunes:duration>
     </item>
     <item>
@@ -21,7 +28,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-01</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-01.m4a" length="2422256" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-01.m4a" length="2422256" type="audio/mp4" />
       <itunes:duration>00:01:29</itunes:duration>
     </item>
     <item>
@@ -29,7 +36,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-02</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-02.m4a" length="1236879" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-02.m4a" length="1236879" type="audio/mp4" />
       <itunes:duration>00:00:48</itunes:duration>
     </item>
     <item>
@@ -37,7 +44,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-03</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-03.m4a" length="2683319" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-03.m4a" length="2683319" type="audio/mp4" />
       <itunes:duration>00:01:39</itunes:duration>
     </item>
     <item>
@@ -45,7 +52,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-04</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-04.m4a" length="1624226" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-04.m4a" length="1624226" type="audio/mp4" />
       <itunes:duration>00:01:01</itunes:duration>
     </item>
     <item>
@@ -53,7 +60,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-05</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-05.m4a" length="2002809" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-05.m4a" length="2002809" type="audio/mp4" />
       <itunes:duration>00:01:15</itunes:duration>
     </item>
     <item>
@@ -61,7 +68,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-06</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-06.m4a" length="2150064" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-06.m4a" length="2150064" type="audio/mp4" />
       <itunes:duration>00:01:20</itunes:duration>
     </item>
     <item>
@@ -69,7 +76,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-07</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-07.m4a" length="2471528" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-07.m4a" length="2471528" type="audio/mp4" />
       <itunes:duration>00:01:34</itunes:duration>
     </item>
     <item>
@@ -77,7 +84,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-08</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-08.m4a" length="4133453" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-08.m4a" length="4133453" type="audio/mp4" />
       <itunes:duration>00:02:37</itunes:duration>
     </item>
     <item>
@@ -85,7 +92,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-09</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-09.m4a" length="2667563" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-09.m4a" length="2667563" type="audio/mp4" />
       <itunes:duration>00:01:41</itunes:duration>
     </item>
     <item>
@@ -93,7 +100,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-10</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-10.m4a" length="3553973" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-10.m4a" length="3553973" type="audio/mp4" />
       <itunes:duration>00:02:12</itunes:duration>
     </item>
     <item>
@@ -101,7 +108,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-11</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-11.m4a" length="3735841" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-11.m4a" length="3735841" type="audio/mp4" />
       <itunes:duration>00:02:20</itunes:duration>
     </item>
     <item>
@@ -109,7 +116,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-12</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-12.m4a" length="2970966" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-12.m4a" length="2970966" type="audio/mp4" />
       <itunes:duration>00:01:54</itunes:duration>
     </item>
     <item>
@@ -117,7 +124,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-13</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-13.m4a" length="3387580" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-13.m4a" length="3387580" type="audio/mp4" />
       <itunes:duration>00:02:07</itunes:duration>
     </item>
     <item>
@@ -125,7 +132,7 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-14</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-14.m4a" length="2005022" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-14.m4a" length="2005022" type="audio/mp4" />
       <itunes:duration>00:01:15</itunes:duration>
     </item>
     <item>
@@ -133,9 +140,8 @@
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
       <guid>2026-02-26-15</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-15.m4a" length="984630" type="audio/mp4"/>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-15.m4a" length="984630" type="audio/mp4" />
       <itunes:duration>00:00:39</itunes:duration>
     </item>
-    <!-- New episodes will be inserted here. -->
   </channel>
 </rss>

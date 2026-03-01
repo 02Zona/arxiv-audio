@@ -1,100 +1,74 @@
-import datetime as dt
-import html
-import re
-from typing import Dict, List
-import feedparser
+#!/usr/bin/env python3
+import argparse
+import datetime
+import json
+from pathlib import Path
+import sys
 
-DEFAULT_CATEGORIES = [
-    "cond-mat.str-el",
-    "cond-mat.dis-nn",
-    "quant-ph",
-    "cond-mat.stat-mech",
-    "cond-mat.supr-con",
-]
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
-
-def strip_html(text: str) -> str:
-    text = re.sub(r"<[^>]+>", " ", text or "")
-    text = html.unescape(text)
-    return re.sub(r"\s+", " ", text).strip()
+from utils.arxiv_api import DEFAULT_CATEGORIES, fetch_entries_by_date
 
 
-def _date_range_token(date_text: str) -> str:
-    date_obj = dt.datetime.strptime(date_text, "%Y-%m-%d")
-    start = date_obj.strftime("%Y%m%d0000")
-    end = date_obj.strftime("%Y%m%d2359")
-    return f"[{start}+TO+{end}]"
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--n", type=int, default=10, help="max papers")
+    ap.add_argument("--date", type=str, default="", help="override date YYYY-MM-DD")
+    ap.add_argument(
+        "--categories",
+        type=str,
+        default=",".join(DEFAULT_CATEGORIES),
+        help="comma-separated arXiv categories",
+    )
+    args = ap.parse_args()
 
+    date_text = args.date.strip() or datetime.datetime.now().strftime("%Y-%m-%d")
+    categories = [c.strip() for c in args.categories.split(",") if c.strip()]
+    out_dir = Path("episodes")
+    out_dir.mkdir(parents=True, exist_ok=True)
 
-def _extract_doi(entry) -> str:
-    # arXiv feed often stores DOI in arxiv_doi or doi
-    for attr in ("arxiv_doi", "doi"):
-        v = getattr(entry, attr, "") or getattr(entry, attr.upper(), "")
-        if v:
-            return strip_html(str(v))
-    # Sometimes DOI appears in links/aux; ignore for now
-    return ""
+    entries = fetch_entries_by_date(date_text, args.n, categories)
+    if not entries:
+        print("No entries found. Nothing to write.")
+        return
 
+    metadata = []
+    for entry in entries:
+        idx = int(entry["index"])
+        lines = [
+            f"Paper {idx}. {entry['title']}.",
+        ]
+        if entry["authors"]:
+            lines.append(f"Authors: {entry['authors']}.")
+        lines.append(f"Abstract: {entry['summary']}")
+        if entry["link"]:
+            lines.append(f"Link: {entry['link']}")
+        lines.append("")
 
-def _extract_categories(entry, default_cat: str) -> List[str]:
-    cats = set()
-    if default_cat:
-        cats.add(default_cat)
-    tags = getattr(entry, "tags", []) or []
-    for t in tags:
-        term = getattr(t, "term", "") or getattr(t, "label", "")
-        term = strip_html(term)
-        if term:
-            cats.add(term)
-    return sorted(cats)
+        txt_path = out_dir / f"{date_text}-{idx:02d}.txt"
+        txt_path.write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
+        print(f"Wrote {txt_path}")
 
-
-def fetch_entries_by_date(date_text: str, limit: int, categories: List[str]) -> List[Dict[str, str]]:
-    pool: Dict[str, Dict[str, str]] = {}
-
-    for category in categories:
-        query = f"cat:{category} AND submittedDate:{_date_range_token(date_text)}"
-        query = query.replace(" ", "+")
-        url = (
-            "https://export.arxiv.org/api/query"
-            f"?search_query={query}&start=0&max_results={limit}"
-            "&sortBy=submittedDate&sortOrder=descending"
-        )
-        feed = feedparser.parse(url)
-        for entry in feed.entries:
-            item_id = getattr(entry, "id", "") or getattr(entry, "link", "")
-            if not item_id or item_id in pool:
-                continue
-
-            authors = ""
-            if hasattr(entry, "authors"):
-                authors = ", ".join(strip_html(a.get("name", "")) for a in entry.authors)
-            elif hasattr(entry, "author"):
-                authors = strip_html(entry.author)
-
-            pool[item_id] = {
-                "title": strip_html(getattr(entry, "title", "")),
-                "summary": strip_html(getattr(entry, "summary", "")),
-                "link": item_id,
-                "authors": authors,
-                "published": getattr(entry, "published", ""),
-                "doi": _extract_doi(entry),
-                "categories": _extract_categories(entry, category),
-            }
-
-    ordered = sorted(pool.values(), key=lambda x: x["published"], reverse=True)[:limit]
-
-    entries: List[Dict[str, str]] = []
-    for idx, item in enumerate(ordered, 1):
-        entries.append(
+        metadata.append(
             {
                 "index": idx,
-                "title": item["title"],
-                "summary": item["summary"],
-                "link": item["link"],
-                "authors": item["authors"],
-                "doi": item["doi"],
-                "categories": item["categories"],
+                "date": date_text,
+                "title": entry.get("title", ""),
+                "authors": entry.get("authors", ""),
+                "summary": entry.get("summary", ""),
+                "link": entry.get("link", ""),
+                "doi": entry.get("doi", ""),
+                "categories": entry.get("categories", []),
+                "txt_path": str(txt_path),
             }
         )
-    return entries
+
+    meta_path = out_dir / f"{date_text}.json"
+    meta_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Wrote {meta_path}")
+
+
+if __name__ == "__main__":
+    main()
