@@ -9,27 +9,27 @@
     <itunes:explicit>false</itunes:explicit>
 
     <item>
-      <title>2026-03-01 — arXiv brief (str-el / dis-nn / quant-ph / stat-mech / supr-con)</title>
+      <title>2026-03-01 · cond-mat/quant-ph 合集 · #01 · arXiv brief</title>
       <description>Daily arXiv audio brief.</description>
       <pubDate>Sun, 01 Mar 2026 08:00:00 -0800</pubDate>
-      <guid>2026-03-01</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-03-01.m4a" length="335326" type="audio/mp4"/>
+      <guid>2026-03-01-01</guid>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-03-01-01.m4a" length="335326" type="audio/mp4"/>
       <itunes:duration>00:00:13</itunes:duration>
     </item>
     <item>
-      <title>2026-02-27 — arXiv brief (str-el / dis-nn / quant-ph / stat-mech / supr-con)</title>
+      <title>2026-02-27 · cond-mat/quant-ph 合集 · #01 · arXiv brief</title>
       <description>Daily arXiv audio brief.</description>
       <pubDate>Fri, 27 Feb 2026 08:00:00 -0800</pubDate>
-      <guid>2026-02-27</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-27.m4a" length="346028" type="audio/mp4"/>
+      <guid>2026-02-27-01</guid>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-27-01.m4a" length="346028" type="audio/mp4"/>
       <itunes:duration>00:00:13</itunes:duration>
     </item>
     <item>
-      <title>2026-02-26 — arXiv brief (str-el / dis-nn / quant-ph / stat-mech / supr-con)</title>
+      <title>2026-02-26 · cond-mat/quant-ph 合集 · #01 · arXiv brief</title>
       <description>Daily arXiv audio brief.</description>
       <pubDate>Thu, 26 Feb 2026 08:00:00 -0800</pubDate>
-      <guid>2026-02-26</guid>
-      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26.m4a" length="342675" type="audio/mp4"/>
+      <guid>2026-02-26-01</guid>
+      <enclosure url="https://02Zona.github.io/arxiv-audio/episodes/2026-02-26-01.m4a" length="342675" type="audio/mp4"/>
       <itunes:duration>00:00:13</itunes:duration>
     </item>
     <!-- New episodes will be inserted here. -->
